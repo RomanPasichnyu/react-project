@@ -1,0 +1,13 @@
+.Card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid silver;
+    width: 250px;
+    margin: 15px;
+}
+.img{
+    max-width: 100%; /* Максимальна ширина зображення рівна ширині контейнера */
+    height: auto; /* Зберігаємо пропорції зображення */
+    display: block; /* Зробимо зображення блочним елементом, щоб уникнути відступів */
+}

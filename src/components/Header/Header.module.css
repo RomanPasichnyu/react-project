@@ -1,4 +1,8 @@
 .Header{
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
