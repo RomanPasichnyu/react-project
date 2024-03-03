@@ -12,20 +12,18 @@ const MovieDetails: FC<IProps> = () => {
 
     const {id} = useParams<{ id: string }>();
 
-    const [info, setInfo] = useState<ICardDetails[]>([])
+    const [info, setInfo] = useState<ICardDetails | null>(null)
 
     useEffect(() => {
         if (id !== undefined) {
             const idNum = +id;
-            movieService.getById(idNum).then(({data}) => setInfo(data))
-                .catch(error => console.error('not number:', error));
+            movieService.getById(idNum).then(({data}) => setInfo(data));
         }
     }, [id]);
-    console.log(info);
 
     return (
         <div>
-            {info.map(card=><MovieDetail key={card.id} card={card}/>)}
+            {info ? (<MovieDetail card={info}/>) : (<span></span>)}
         </div>
     );
 };

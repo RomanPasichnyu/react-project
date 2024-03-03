@@ -4,8 +4,10 @@ import css from './Header.module.css'
 const Header = () => {
     return (
         <div className={css.Header}>
-            <NavLink to={'movies'}>Movies</NavLink>
-            <NavLink to={'genres'}>Genres</NavLink>
+            <NavLink className={css.Link} to={'movies'}>Movies</NavLink>
+            <input placeholder={'Search...'}/>
+            <NavLink className={css.Link} to={'genres'}>Genres</NavLink>
+            <i className="material-icons">person Roma</i>
 
         </div>
     );

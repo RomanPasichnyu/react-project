@@ -1,0 +1,25 @@
+.GenreCard{
+    border-radius: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    max-width: 121px;
+    padding: 20px;
+    margin: 2px;
+    background-color: red;
+    color: white;
+}
+
+.Genres{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Link{
+    text-decoration: none;
+    color: white;
+}

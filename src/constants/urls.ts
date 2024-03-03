@@ -7,6 +7,7 @@ const genres = '/genre/movie/list'
 const details = '/movie'
 
 
+
 const urls = {
     movies:{
         base: movies,

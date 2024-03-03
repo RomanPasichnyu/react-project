@@ -6,7 +6,7 @@ import {urls} from "../constants/urls";
 
 const genresService
     = {
-    getAll:():IRes<IGenres[]>=>apiService.get(urls.genres.base),
+    getAll:():IRes<IGenres>=>apiService.get(urls.genres.base),
 }
 export {
     genresService
